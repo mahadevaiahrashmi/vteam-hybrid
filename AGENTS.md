@@ -1,5 +1,5 @@
 <!-- For a human-readable overview, see README.md and docs/template-guide.md -->
-# CLAUDE.md — Project Instructions for Claude Code
+# AGENTS.md — Project Instructions for Codex
 
 ## Project Overview
 
@@ -101,25 +101,13 @@ Commit and push after every reasonable chunk of work. One commit per issue. Conv
 ## Tracking
 
 <!-- tracking-adapter: github-projects -->
-<!-- project-number: 1 -->
-<!-- project-owner: mahadevaiahrashmi -->
+<!-- project-number: -->
+<!-- project-owner: -->
 
 **Adapter docs:** `docs/integrations/README.md`
 **Status flow:** Backlog → Ready → In Progress → In Review → Done
 
 Board commands, pre-flight checks, and setup instructions are in the active adapter file. Grace manages board status. Pat manages priorities.
-
-### GitHub Project Metadata
-
-- Project URL: https://github.com/users/mahadevaiahrashmi/projects/1
-- Project node ID: `PVT_kwHOATydZs4BT5qV`
-- Status field ID: `PVTSSF_lAHOATydZs4BT5qVzhBFX-g`
-- Status option IDs:
-  - Backlog: `29695aba`
-  - Ready: `1628212b`
-  - In Progress: `eae33490`
-  - In Review: `8abcbfdd`
-  - Done: `3c5b6504`
 
 ## Sprint Boundary
 
@@ -135,12 +123,6 @@ Run `/sprint-boundary` when all sprint items are Done or deferred. Full workflow
 4. **Read `docs/code-map.md` first.** Orient from the map, not from scratch.
 5. **Commit frequently.** Uncommitted work is the most expensive thing to reconstruct.
 6. **Tracking artifacts carry phase context.** See `docs/process/tracking-protocol.md`.
-
-## Lessons Learned
-
-- Verify GitHub CLI scopes (`project`, `read:project`) before board automation commands.
-- Keep local git identity configured at repo init to avoid commit blocking during delivery.
-- For Python CLI workflows on Ubuntu, document whether `python3-venv` is required or use stdlib test fallback.
 
 ## Process Docs Index
 
@@ -164,7 +146,7 @@ Run `/sprint-boundary` when all sprint items are Done or deferred. Full workflow
 
 ```
 .
-├── CLAUDE.md                 # This file — slim runtime instructions
+├── AGENTS.md                 # This file — slim runtime instructions
 ├── docs/
 │   ├── methodology/          # System docs (phases, personas, agent-notes)
 │   ├── process/              # Governance, done gate, gotchas, doc ownership
@@ -173,7 +155,7 @@ Run `/sprint-boundary` when all sprint items are Done or deferred. Full workflow
 │   ├── adrs/                 # Architecture Decision Records
 │   │   └── template/         # Template-specific ADRs (removed during scaffold)
 │   └── research/             # Cloud landscape and template research
-├── .claude/
+├── .Codex/
 │   ├── agents/               # Subagent persona definitions (19 agent files)
 │   └── commands/             # Custom slash commands (27, auto-discovered)
 └── scripts/                  # Automation scripts

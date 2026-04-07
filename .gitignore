@@ -43,6 +43,7 @@ coverage/
 htmlcov/
 .coverage
 *.lcov
+.todo-cli/
 
 # OS files
 Desktop.ini
